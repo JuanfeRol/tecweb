@@ -113,5 +113,31 @@
             unset($b);
             unset($c);
         ?></body>
+        <h3>Ejercicio 6</h3>
+            <?php
+// Definimos las variables
+                $a = "0";
+                $b = "TRUE";
+                $c = FALSE;
+                $d = ($a OR $b);
+                $e = ($a AND $c);
+                $f = ($a XOR $b);
+
+                // Mostramos los valores booleanos de las variables
+                echo "Valores booleanos de las variables:<br>";
+                echo "\$a: "; var_dump((bool)$a); echo "<br>";
+                echo "\$b: "; var_dump((bool)$b); echo "<br>";
+                echo "\$c: "; var_dump((bool)$c); echo "<br>";
+                echo "\$d: "; var_dump((bool)$d); echo "<br>";
+                echo "\$e: "; var_dump((bool)$e); echo "<br>";
+                echo "\$f: "; var_dump((bool)$f); echo "<br><br>";
+
+                // Función de PHP para transformar valores booleanos en una cadena legible
+                echo "Transformación de valores booleanos de \$c y \$e:<br>";
+                echo "\$c: " . ($c ? 'TRUE' : 'FALSE') . "<br>";
+                echo "\$e: " . ($e ? 'TRUE' : 'FALSE') . "<br>";
+                ?>
+</body>
+
 
 </html>
