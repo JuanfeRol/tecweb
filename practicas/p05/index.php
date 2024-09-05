@@ -29,7 +29,17 @@
         ?>
     <h2>Ejercicio 2</h2>
         <?php
-            
+            $a = "ManejadorSQL";
+            $b = "MySQL";
+            $c = &$a;
+            echo "a = $a, b = $b, c = $c<br>";
+
+            $a = "PHP server";
+            $b = &$a;
+
+            echo "a = $a, b = $b<br>";
+
+            echo '<p>Se modificaron los valores de a y b directamente, al ser c definido por referencia a la variable "a", su valor también se modifica </p>';
         ?>
 </body>
 </html>
