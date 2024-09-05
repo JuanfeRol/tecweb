@@ -84,6 +84,18 @@
             echo "Después de la asignación \$z[0] = <br>";
             print_r($z);
         ?>
-
+    <h2>Ejercicio 4</h2>
+        <?php
+            // Definimos las variables como globales
+                global $a;
+                global $z;
+                global $b;
+                global $c;
+                echo '$a ='.$a.'<br><br>';
+                echo '$b = '.$b.'<br><br>';
+                echo '$c = '.$c.'<br><br>';
+                echo '$z = ';
+                print_r($z);    
+        ?>
 </body>
 </html>
