@@ -96,6 +96,22 @@
                 echo '$c = '.$c.'<br><br>';
                 echo '$z = ';
                 print_r($z);    
-        ?>
-</body>
+        ?>        
+        <h3>Ejercicio 5</h3>
+        <?php
+            echo 'Impresión de variables después de cada asignación<br>';
+            $a = "7 personas";
+            echo $a.'<br>'; 
+            $b = (integer) $a;
+            echo $b.'<br>';
+            $a = "9E3";
+            echo $a.'<br>';
+            $c = (double) $a;
+            echo $c.'<br>';
+            
+            unset($a);
+            unset($b);
+            unset($c);
+        ?></body>
+
 </html>
