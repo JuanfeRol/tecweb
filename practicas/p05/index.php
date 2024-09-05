@@ -41,5 +41,49 @@
 
             echo '<p>Se modificaron los valores de a y b directamente, al ser c definido por referencia a la variable "a", su valor también se modifica </p>';
         ?>
+    <h2>Ejercicio 3</h2>
+        <?php
+            // Asignamos el valor inicial a $a
+            $a = "PHP5";
+            // Mostramos el contenido de $a y su tipo
+            echo "Después de la asignación \$a = 'PHP5':<br>";
+            echo "a = $a, tipo = " . gettype($a) . "<br><br>";
+
+            // Creamos un array $z y asignamos por referencia el valor de $a
+            $z[] = &$a;
+            // Mostramos el contenido de $z y $a, y los tipos
+            echo "Después de la asignación \$z[] = ";
+            print_r($z);
+            echo ":<br>";
+
+            // Asignamos un nuevo valor a $b
+            $b = "5a version de PHP";
+            // Mostramos el contenido de $b y su tipo
+            echo "<br>Después de la asignación \$b = '5a version de PHP':<br>";
+            echo "b = $b, tipo = " . gettype($b) . "<br><br>";
+
+            // Asignamos a $c el resultado de $b*10 (esto intentará convertir $b a número)
+            $c = $b * 10;
+            // Mostramos el contenido de $c y su tipo
+            echo "Después de la asignación \$c = \$b * 10:<br>";
+            echo "c = $c, tipo = " . gettype($c) . "<br><br>";
+
+            // Concatenamos $a con el valor de $b
+            $a .= $b;
+            // Mostramos el contenido de $a y $z[0] (que está referenciado a $a)
+            echo "Después de la asignación \$a .= $a \$b = $b <br>";
+            // Multiplicamos $b por $c
+            $b *= $c;
+            // Mostramos el contenido de $b y su tipo
+            echo "Después de la asignación \$b *= \$ $c:<br>";
+            echo "b = $b, tipo = " . gettype($b) . "<br><br>";
+
+            // Asignamos un nuevo valor a $z[0], lo que también afecta a $a porque están referenciados
+            $z[0] = "MySQL";
+            // Mostramos el contenido de $z[0] y $a
+            echo "Después de la asignación \$z[0] = <br>";
+            print_r($z);
+        ?>
+
 </body>
 </html>
