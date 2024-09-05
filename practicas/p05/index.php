@@ -131,12 +131,23 @@
                 echo "\$d: "; var_dump((bool)$d); echo "<br>";
                 echo "\$e: "; var_dump((bool)$e); echo "<br>";
                 echo "\$f: "; var_dump((bool)$f); echo "<br><br>";
+            ?>
+        <h3>Ejercicio 7</h3>
+        <?php
+                // a. Determinar la versión de Apache y PHP
+                echo "Versión de Apache y PHP:<br>";
+                echo "PHP: " . $_SERVER['SERVER_SOFTWARE'] . "<br>";
+                echo "Versión de PHP: " . phpversion() . "<br><br>";
 
-                // Función de PHP para transformar valores booleanos en una cadena legible
-                echo "Transformación de valores booleanos de \$c y \$e:<br>";
-                echo "\$c: " . ($c ? 'TRUE' : 'FALSE') . "<br>";
-                echo "\$e: " . ($e ? 'TRUE' : 'FALSE') . "<br>";
-                ?>
+                // b. Nombre del sistema operativo del servidor
+                echo "Sistema operativo del servidor:<br>";
+                echo PHP_OS . "<br><br>";
+
+                // c. Idioma del navegador del cliente
+                echo "Idioma del navegador (cliente):<br>";
+                echo $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "<br><br>";
+            ?>
+
 </body>
 
 
