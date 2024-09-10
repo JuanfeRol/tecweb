@@ -16,7 +16,8 @@
 
     <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike&#174;?<br><br>Justifica el por qué tus tenis se <em>tienen que</em> ir y tú puedes ser uno de los diez afortunados ganadores.</p>
 
-    <p>Información del Participante</p>
+    <fieldset>
+    <legend><p>Información del Participante</p></legend>
     <form>
     <ul>
     <li>Nombre: <input type = "text" name = "name"></li>
@@ -26,10 +27,13 @@
     <textarea name="story" rows="4" cols="60" maxlength="300"
     placeholder="No más de 300 caracteres de logitud"></textarea></li>
     </ul>
+  </fieldset>
 
-    <h2>Diseña tus Mike personalizados:</h2>
+    <legend><h2>Diseña tus Mike personalizados:</h2></legend>
+    <fieldset>
 
-    <p>Diseño personalizado del Tenis</p>
+    <fieldset>  
+    <legend><p>Diseño personalizado del Tenis</p></legend>
 
     <p>Color <em>(escoge uno)</em>:</p>
       <ul>
@@ -38,16 +42,19 @@
       <li><input type = "radio" name = "color" value = "black">Negro</li>
       <li><input type = "radio" name = "color" value = "silver">Plateado</li>
       </ul>
+    </fieldset>
 
-    <p>Características <em>(escoge tantas como quieras)</em>:</p>
+    <fieldset>
+    <legend><p>Características <em>(escoge tantas como quieras)</em>:</p></legend>
       <ul>
       <li><input type = "checkbox" name="features[]" value = "laces">Cordones brillantes</li>
       <li><input type = "checkbox" name="features[]" value = "logo" checked>Logo metálico</li>
       <li><input type = "checkbox" name="features[]" value = "suela">Suela luminosa</li>
       <li><input type = "checkbox" name="features[]" value = "wifi">WiFi integrado</li>
       </ul>
-
-    <p>Talla</p>
+    </fieldset>
+    <fieldset>
+    <legend><p>Talla</p></legend>
     <p>Las medidas reflejan el estándar masculino:
       <select name = size>
         <option value="talla"> 3 </option>
@@ -60,9 +67,12 @@
         <option value="talla"> 10 </option>
         <option value="talla"> 11 </option>
       </select>
+    </p>
+    </fieldset> 
 
     </p>
     <p>
+    </fieldset>
     <input type = "submit" value = "Subir">
     <input type = "reset">
     </p>
