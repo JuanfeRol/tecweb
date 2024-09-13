@@ -22,5 +22,21 @@
     <?php
         generacionRepetitiva();
     ?>
+
+    <h2>Ejercicio 3 </h2>
+    <p>Utiliza un ciclo while para encontrar el primer número entero obtenido aleatoriamente,
+    pero que además sea múltiplo de un número dado.<br>
+    • Crear una variante de este script utilizando el ciclo do-while.<br>
+    • El número dado se debe obtener vía GET.<br></p>
+    <?php
+       if(isset($_GET['numero'])){
+        $num = $_GET['numero'];
+        enteroMultiplo($num);
+        enteroMultiploDW($num);
+        }    
+    ?>
+
+
+
 </body>
 </html>
