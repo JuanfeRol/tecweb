@@ -36,6 +36,12 @@
         }    
     ?>
 
+    <h2>Ejercicio 4</h2>
+    <p>Crear un arreglo cuyos indices van de 97 a 122, y cuyos valores sean los caracteres</p>
+    <?php
+        abecedario();
+    ?>
+
 
 
 </body>

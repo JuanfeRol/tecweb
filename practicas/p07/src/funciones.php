@@ -64,5 +64,25 @@ function enteroMultiploDW($num){
     echo 'Se han necesitado '.$contadorIteraciones.' iteraciones para obtener el número.<br>';
 }
 
+function abecedario(){
+    for ($i = 97; $i <= 122; $i++){
+        $matriz [$i] = chr($i);  
+    };
+
+    //Tabla XHTML con los valores del abecedario usando ciclo foreach
+    echo '<table border="1">';
+    echo '<tr>';
+    echo '<th>Indice</th>';
+    echo '<th>Valor</th>';
+    echo '</tr>';
+    foreach ($matriz as $key => $value){
+        echo '<tr>';
+        echo '<th>'.$key.'</th>';
+        echo '<th>'.$value.'</th>';
+        echo '</tr>';
+    }
+    echo '</table>';
+
+}
 
 ?>
