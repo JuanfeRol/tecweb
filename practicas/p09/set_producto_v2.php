@@ -23,8 +23,7 @@ $modelo=$_POST['model'];
 $precio=$_POST['price'];
 $detalles=$_POST['details'];
 $unidades=$_POST['units'];
-$flag = 0;
-
+$eliminado = 0;
 // Validar que ni el nombre, modelo y marca existan en la base de datos
 $validacion = "SELECT * FROM productos WHERE nombre = '{$nombre}' AND modelo = '{$modelo}' AND marca = '{$marca}'";
 $result = $link->query($validacion);
@@ -32,18 +31,29 @@ $result = $link->query($validacion);
 if ($result->num_rows > 0) {
     echo 'El nombre, modelo y marca ya existen en la base de datos';
     exit;
-    $flag = 1;
 }
 
-if ($flag == 0) {
-    $sql = "INSERT INTO productos VALUES (null, '{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}')";
+    //$sql = "INSERT INTO productos VALUES (null, '{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}', {$eliminado})";
+    $sql = "INSERT INTO productos(nombre, marca, modelo, precio, detalles, unidades) 
+    VALUES('$nombre', '$marca', '$modelo', '$precio', '$detalles', '$unidades')";
+
     if ( $link->query($sql) ) 
     {
         echo 'Producto insertado con ID: '.$link->insert_id;
+        echo '<br>';
+        echo 'Nombre: '.$nombre;
+        echo '<br>';
+        echo 'Marca: '.$marca;
+        echo '<br>';
+        echo 'Modelo: '.$modelo;
+        echo '<br>';
+        echo 'Precio: '.$precio;
+        echo '<br>';
+        echo 'Detalles: '.$detalles;
     }
     else
     {
         echo 'El Producto no pudo ser insertado =(';
     }
-}
+
 ?>
