@@ -2,11 +2,8 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 	<?php
-	if (isset($_GET['tope'])) {
-		$tope = $_GET['tope'];
-	}
 
-	if (!empty($tope)) {
+
 		/** SE CREA EL OBJETO DE CONEXION */
 		@$link = new mysqli('localhost', 'root', 'pochita20', 'marketzone');
 
@@ -17,7 +14,7 @@
 		}
 
 		/** Ejecutar consulta */
-		$query = "SELECT * FROM productos WHERE unidades <= '{$tope}'";
+		$query = "SELECT * FROM productos WHERE eliminado = 0";
 		if ($result = $link->query($query)) {
 			/** Se extraen las tuplas obtenidas de la consulta */
 			$rows = $result->fetch_all(MYSQLI_ASSOC);
@@ -26,7 +23,6 @@
 		}
 
 		$link->close();
-	}
 	?>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
