@@ -5,7 +5,7 @@ $modelo = 'modelo_producto';
 $precio = 1.0;
 $detalles = 'detalles_producto';
 $unidades = 1;
-$imagen   = 'img/imagen.png';
+$imagen   = 'img/default.png';
 
 /** SE CREA EL OBJETO DE CONEXION */
 @$link = new mysqli('localhost', 'root', 'pochita20', 'marketzone');	
@@ -23,6 +23,7 @@ $modelo=$_POST['model'];
 $precio=$_POST['price'];
 $detalles=$_POST['details'];
 $unidades=$_POST['units'];
+$imagen=$_POST['image'];
 $eliminado = 0;
 // Validar que ni el nombre, modelo y marca existan en la base de datos
 $validacion = "SELECT * FROM productos WHERE nombre = '{$nombre}' AND modelo = '{$modelo}' AND marca = '{$marca}'";
@@ -34,8 +35,8 @@ if ($result->num_rows > 0) {
 }
 
     //$sql = "INSERT INTO productos VALUES (null, '{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}', {$eliminado})";
-    $sql = "INSERT INTO productos(nombre, marca, modelo, precio, detalles, unidades) 
-    VALUES('$nombre', '$marca', '$modelo', '$precio', '$detalles', '$unidades')";
+    $sql = "INSERT INTO productos(nombre, marca, modelo, precio, detalles, unidades, imagen) 
+    VALUES('$nombre', '$marca', '$modelo', '$precio', '$detalles', '$unidades', '$imagen')";
 
     if ( $link->query($sql) ) 
     {
@@ -50,6 +51,8 @@ if ($result->num_rows > 0) {
         echo 'Precio: '.$precio;
         echo '<br>';
         echo 'Detalles: '.$detalles;
+        echo '<br>';
+        echo 'Imagen: '.$imagen;
     }
     else
     {
