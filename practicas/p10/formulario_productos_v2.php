@@ -69,7 +69,7 @@
     // Asignar la función al evento de envío del formulario
     window.onload = function() {
       document.getElementById("formularioTenis").addEventListener("submit", validarFormulario);
-    };
+    };            
   </script>
 </head>
 <body>
@@ -80,38 +80,42 @@
 
     <fieldset>
       <ul>
+      <li>
+          <label for="form-name">Id del producto:</label><br>
+          <input type="text" name="id" id="form-id" required value="<?= !empty($_POST['id'])?$_POST['id']:$_GET['id'] ?>" readonly>
+        </li>
         <li>
           <label for="form-name">Nombre del producto:</label><br>
-          <input type="text" name="name" id="form-name" required>
+          <input type="text" name="name" id="form-name" required value="<?= !empty($_POST['nombre'])?$_POST['nombre']:$_GET['nombre'] ?>">
         </li>
         <li>
           <label for="form-brand">Marca del producto:</label><br>
           <select name="brand" id="form-brand" required>
             <option value="">Selecciona una marca</option>
-            <option value="Peanuts">Peanuts</option>
+            <option value="Peanuts">Peanuts</option>s
             <option value="Sanrio">Sanrio</option>
             <option value="MuñeLocos">Muñelocos</option>
           </select>
         </li>
         <li>
           <label for="form-model">Modelo del producto:</label><br>
-          <input type="text" name="model" id="form-model" required>
+          <input type="text" name="model" id="form-model" required value="<?= !empty($_POST['modelo'])?$_POST['modelo']:$_GET['modelo'] ?>">
         </li>
         <li>
           <label for="form-price">Precio del producto:</label><br>
-          <input type="text" name="price" id="form-price" required>
+          <input type="text" name="price" id="form-price" required value="<?= !empty($_POST['precio'])?$_POST['precio']:$_GET['precio'] ?>">
         </li>
         <li>
           <label for="form-units">Unidades en existencia:</label><br>
-          <input type="text" name="units" id="form-units" required>
+          <input type="text" name="units" id="form-units" required value="<?= !empty($_POST['unidades'])?$_POST['unidades']:$_GET['unidades'] ?>">
         </li>
         <li>
           <label for="form-details">Detalles del producto:</label><br>
-          <textarea name="details" rows="4" cols="60" id="form-details" placeholder="No más de 250 caracteres de longitud"></textarea>
+          <input type="text" name="details" id="form-details" placeholder="No más de 250 caracteres de longitud" value="<?= !empty($_POST['detalles'])?$_POST['detalles']:$_GET['detalles'] ?>"></textarea>
         </li>
         <li>
           <label for="form-units">Ruta Imagen:</label><br>
-          <input type="text" name="image" id="form-units">
+          <input type="text" name="image" id="form-units" value="<?= !empty($_POST['imagen'])?$_POST['imagen']:$_GET['imagen'] ?>" >
         </li>
       </ul>
     </fieldset>
