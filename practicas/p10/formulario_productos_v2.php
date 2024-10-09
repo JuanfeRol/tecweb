@@ -68,20 +68,20 @@
 
     // Asignar la función al evento de envío del formulario
     window.onload = function() {
-      document.getElementById("formularioTenis").addEventListener("submit", validarFormulario);
+      document.getElementById("formularioProducto").addEventListener("submit", validarFormulario);
     };            
   </script>
 </head>
 <body>
   <h1>Registro de productos nuevos</h1>
 
-  <form id="formularioTenis" action="http://localhost/tecweb/practicas/p09/set_producto_v2.php" method="post">
+  <form id="formularioProducto" action="http://localhost/tecweb/practicas/p10/update_producto.php" method="post">
     <h2>Inserte datos del producto nuevo:</h2>
 
     <fieldset>
       <ul>
       <li>
-          <label for="form-name">Id del producto:</label><br>
+          <label for="form-id">Id del producto:</label><br>
           <input type="text" name="id" id="form-id" required value="<?= !empty($_POST['id'])?$_POST['id']:$_GET['id'] ?>" readonly>
         </li>
         <li>
@@ -95,6 +95,8 @@
             <option value="Peanuts">Peanuts</option>s
             <option value="Sanrio">Sanrio</option>
             <option value="MuñeLocos">Muñelocos</option>
+            <option value="Disney">Disney</option>
+            <option value="Fulanitos">Fulanitos</option>
           </select>
         </li>
         <li>
@@ -111,17 +113,17 @@
         </li>
         <li>
           <label for="form-details">Detalles del producto:</label><br>
-          <input type="text" name="details" id="form-details" placeholder="No más de 250 caracteres de longitud" value="<?= !empty($_POST['detalles'])?$_POST['detalles']:$_GET['detalles'] ?>"></textarea>
+          <input type="text" name="details" id="form-details" value="<?= !empty($_POST['detalles'])?$_POST['detalles']:$_GET['detalles'] ?>">
         </li>
         <li>
-          <label for="form-units">Ruta Imagen:</label><br>
-          <input type="text" name="image" id="form-units" value="<?= !empty($_POST['imagen'])?$_POST['imagen']:$_GET['imagen'] ?>" >
+          <label for="form-image">Ruta Imagen:</label><br>
+          <input type="text" name="image" id="form-image" value="<?= !empty($_POST['imagen'])?$_POST['imagen']:$_GET['imagen'] ?>" >
         </li>
       </ul>
     </fieldset>
 
     <p>
-      <input type="submit" value="Subir producto a BD">
+      <input type="submit" value="Actualizar">
       <input type="reset" value="Restablecer">
     </p>
   </form>
