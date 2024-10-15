@@ -13,7 +13,10 @@
         <ul></ul>
         <form>
           <input name="search" id="search" type="search" placeholder="ID">
-          <button type="submit" onclick="buscarID(event)">Buscar</button>
+          <button type="submit" onclick="buscarID(event)">Buscar ID</button>
+          <br>
+          <input name="searchname" id="searchname" type="searchname" placeholder="Nombre">
+          <button type="submit" onclick="buscarProducto(event)">Buscar concidencias</button>
         </form>
     </nav>
 
@@ -22,6 +25,7 @@
         <!-- FORMULARIO PARA AGREGAR PRODUCTO -->
         <form id="task-form">
           <div>
+            <h4>Inserte datos del producto nuevo:</h4>
             <input type="text" id="name" placeholder="Nombre de producto">
           </div>
           <div>
