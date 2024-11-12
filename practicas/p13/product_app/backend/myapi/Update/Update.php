@@ -1,9 +1,9 @@
 <?php
-    namespace ACTIVIDADES\PRODUCTOS\UPDATE;
+    namespace API\Update;
     require_once __DIR__ . '/../DataBase.php';
-    use ACTIVIDADES\PRODUCTOS\DataBase as DataBase;
+    use API\DataBase as DataBase;
 
-    class update extends DataBase{
+    class Update extends DataBase{
         public function __construct($db) {
             parent::__construct($db);
         }

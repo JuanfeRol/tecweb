@@ -1,6 +1,6 @@
 <?php
 
-namespace ACTIVIDADES\PRODUCTOS;
+namespace API;
 
 abstract class DataBase
 {

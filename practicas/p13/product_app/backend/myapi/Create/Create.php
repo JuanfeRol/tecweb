@@ -1,9 +1,9 @@
 <?php
-namespace ACTIVIDADES\PRODUCTOS\CREATE;
+namespace API\Create;
 require_once __DIR__ . '/../DataBase.php';
-use ACTIVIDADES\PRODUCTOS\DataBase as DataBase;
+use API\DataBase as DataBase;
 
-class create extends DataBase{
+class Create extends DataBase{
     public function __construct($db) {
         parent::__construct($db);
     }

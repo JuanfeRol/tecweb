@@ -1,9 +1,9 @@
 <?php
-    namespace ACTIVIDADES\PRODUCTOS\DELETE;
+    namespace API\Delete;
     require_once __DIR__ . '/../DataBase.php';
-    use ACTIVIDADES\PRODUCTOS\DataBase as DataBase;
+    use API\DataBase as DataBase;
 
-    class delete extends DataBase{
+    class Delete extends DataBase{
         public function __construct($db) {
             parent::__construct($db);
         }

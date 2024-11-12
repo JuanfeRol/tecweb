@@ -1,9 +1,10 @@
 <?php
-    use ACTIVIDADES\PRODUCTOS\Products as Products;
+    use API\Read\Read;
 
-    require_once __DIR__ . '/myapi/Products.php';
 
-    $products = new Products('marketzone');
+    require_once __DIR__ . '/vendor/autoload.php';
+
+    $products = new Read('marketzone');
     $products->single($_POST);
     echo $products->getData();
 

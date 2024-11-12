@@ -1,9 +1,10 @@
 <?php  
-    namespace ACTIVIDADES\PRODUCTOS\READ;
+    namespace API\Read;
+    use API\DataBase as DataBase;
     require_once __DIR__ . '/../DataBase.php';
-    use ACTIVIDADES\PRODUCTOS\DataBase as DataBase;
 
-    class read extends DataBase{
+    class Read extends DataBase{
+
         public function __construct($db) {
             parent::__construct($db);
         }
