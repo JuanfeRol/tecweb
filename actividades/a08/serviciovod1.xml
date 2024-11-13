@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding?UTF-8?>
+
+<catalogo>
+    <cuenta>
+        <correo>juan@gmail.com</correo>
+        <perfiles>
+            <perfil>
+                <usuario>Juanito</usuario>
+                <idioma>Ingles</idioma>
+            </perfil>
+            <perfil>
+                <usuario>vf</usuario>
+                <idioma>Japones</idioma>
+            </perfil>
+        </perfiles>
+    </cuenta>
+    <contenido>
+        <pelicula>
+            <genero>
+                <nombre>Accion</nombre>
+                <titulo>
+                    <nombre>John Wick: Otro dia para matar</nombre>
+                    <duracion>105 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>John Wick 2: Un dia nuevo para matar</nombre>
+                    <duracion>122 minutos</duracion>
+                </titulo>
+
+                <titulo>
+                    <nombre>John Wick 3: Parabellum</nombre>
+                    <duracion>131 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Matrix</nombre>
+                    <duracion>136 minutos</duracion>
+                </titulo>
+            </genero>
+            <genero>
+                <nombre>Animacion</nombre>
+                <titulo>
+                    <nombre>Spirit: el corcel indomable</nombre>
+                    <duracion>84 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>El castillo vagabundo</nombre>
+                    <duracion>119 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Las aventuras de Peabody y Sherman</nombre>
+                    <duracion>92 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Shrek 2</nombre>
+                    <duracion>93 minutos</duracion>
+                </titulo>
+            </genero>
+        </peliculas>
+        <programas>
+            <genero>
+                <nombre>Anime</nombre>
+                <titulo>
+                    <nombre>Hunter x Hunter</nombre>
+                    <duracion>22 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>ID: INVADED</nombre>
+                    <duracion>22 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Pyscho-Pass</nombre>
+                    <duracion>22 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Yu Yu hakusho</nombre>
+                    <duracion>22 minutos</duracion>
+                </titulo>
+            </genero>
+            <genero>
+                <nombre>Misterio</nombre>
+                <titulo>
+                    <nombre>Dr. House</nombre>
+                    <duracion>45 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>The Sandman</nombre>
+                    <duracion>37 - 64 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Ozark</nombre>
+                    <duracion>52 - 80 minutos</duracion>
+                </titulo>
+                <titulo>
+                    <nombre>Mindhunter</nombre>
+                    <duracion>35 - 74 minutos</duracion>
+                </titulo>
+            </genero>
+        </programas>
+    </contenido>
+</catalogo>
