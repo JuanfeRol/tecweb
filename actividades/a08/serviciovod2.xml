@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogo>
+    <cuenta correo="juan@gmail.com">
+        <perfiles>
+            <perfil usuario="Juanito" idioma="Ingles"/>
+            <perfil usuario="vf" idioma="Japones"/>
+        </perfiles>
+    </cuenta>
+    <contenido>
+        <peliculas>
+            <genero nombre="Accion">
+                <titulo nombre="John Wick: Otro dia para matar" duracion="105 minutos"/>
+                <titulo nombre="John Wick 2: Un dia nuevo para matar" duracion="122 minutos"/>
+                <titulo nombre="John Wick 3: Parabellum" duracion="131 minutos"/>
+                <titulo nombre="Matrix" duracion="136 minutos"/>
+            </genero>
+
+            <genero nombre="Animacion">
+                <titulo nombre="Spirit: el corcel indomable" duracion="84 minutos"/>
+                <titulo nombre="El castillo vagabundo" duracion="119 minutos"/>
+                <titulo nombre="Las aventuras de Peabody y Sherman" duracion="92 minutos"/>
+                <titulo nombre="Shrek 2" duracion="93 minutos"/>
+            </genero>
+        </peliculas>
+
+        <programas>
+            <genero nombre="Anime">
+                <titulo nombre="Hunter x Hunter" duracion="22 minutos"/>
+                <titulo nombre="ID: INVADED" duracion="22 minutos"/>
+                <titulo nombre="Pyscho-Pass" duracion="22 minutos"/>
+                <titulo nombre="Yu Yu hakusho" duracion="22 minutos"/>
+            </genero>
+
+            <genero nombre="Misterio">
+                <titulo nombre="Dr. House" duracion="45 minutos"/>
+                <titulo nombre="The Sandman" duracion="37 - 64 minutos"/>
+                <titulo nombre="Ozark" duracion="52 - 80 minutos"/>
+                <titulo nombre="Mindhunter" duracion="35 - 74 minutos"/>
+            </genero>
+        </programas>
+    </contenido>
+</catalogo>
