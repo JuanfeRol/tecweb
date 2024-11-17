@@ -22,7 +22,7 @@
                 <titulo nombre="Spirit: el corcel indomable" duracion="84 minutos"/>
                 <titulo nombre="El castillo vagabundo" duracion="119 minutos"/>
                 <titulo nombre="Las aventuras de Peabody y Sherman" duracion="92 minutos"/>
-                <titulo nombre="Shrek 2" duracion="93 minutos"><![CDATA[<video id="11">]]></titulo>
+                <titulo nombre="Shrek 2" duracion="93 minutos"><![CDATA[<video id="11">&lt;</video>]]></titulo>
             </genero>
         </peliculas>
 
