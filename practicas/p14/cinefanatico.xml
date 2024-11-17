@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cinefanatico SYSTEM "cinefanatico.dtd">
+<cinefanatico>
+    <tarjeta noserie="26854" visitas="5" puntos="55">
+        <nombre>Gon Freecs</nombre>
+        <correo>GFreecs@gmail.com</correo>
+        <telefono tipo="movil">2265778931</telefono>
+    </tarjeta>
+    <tarjeta noserie="13675" visitas="20" puntos="220">
+        <nombre>Leorio Paradinight</nombre>
+        <correo>LeorioPara@gmail.com</correo>
+        <telefono tipo="casa">2265983241</telefono>
+    </tarjeta>
+</cinefanatico> 
