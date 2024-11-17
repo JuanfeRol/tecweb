@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spotify xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="spotify.xsd">
+    <!-- Primera cuenta -->
+    <Cuenta id="1" plan="premium" fechaIni="2022-02-01" fechaFin="2023-02-01">
+        <Nombre>Killua</Nombre>
+        <Correo>KillZold1@gmail.com</Correo>
+        <Telefono tipo="movil">2296441258</Telefono>
+    </Cuenta>
+    
+    <!-- Sin teléfono -->
+    <Cuenta id="2" plan="free">
+        <Nombre>Chrollo Lucifer</Nombre>
+        <Correo>ChrLuc@gmail.com</Correo>
+    </Cuenta>
+
+    <!-- Cuenta con todos los atributos -->
+    <Cuenta id="3" plan="family" fechaIni="2023-01-01" fechaFin="2023-12-31">
+        <Nombre>Bob Esponja</Nombre>
+        <Correo>bobPantalonesCuadrados@gmail.com</Correo>
+        <Telefono tipo="fijo">5569331258</Telefono>
+    </Cuenta>
+</Spotify>
